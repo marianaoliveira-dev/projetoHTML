@@ -69,7 +69,7 @@ img {
     align-items: center; 
 }  */
 
-body {
+/* body {
     margin: 0;
     padding: 0;
     background-color: black;
@@ -121,10 +121,10 @@ video {
 
 .texto {
     position: absolute; /* Alterei para 'absolute' para melhor controle de posição */
-    top: 23%; /* Ajustei o valor para um posicionamento mais natural */
-    left: 50%;
+    /* top: 23%; /* Ajustei o valor para um posicionamento mais natural */
+    /* left: 50%;
     transform: translateX(-50%); /* Ajustei o transform para centralizar horizontalmente */
-    color: white;
+    /* color: white;
     font-size: 24px;
     text-decoration: solid;
     font-weight: bold;
@@ -146,4 +146,119 @@ footer {
     justify-content: center;
     align-items: center;
     font-family: Courier New, monospace	;
+} */ 
+@media (max-width: 768px) {
+    .navegacao {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navegacao ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .texto {
+        font-size: 18px;
+    }
+    .introducao {
+        font-size: medium;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-bottom: 1px solid rgb(63, 63, 63);
+}
+
+.navegacao ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navegacao ul li {
+    display: inline;
+}
+
+.navegacao ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navegacao ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.container video {
+    width: 100%;
+    height: auto;
+}
+
+.texto {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 10px;
+}
+
+.introducao {
+    color: #fff;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 10px 20px;
+}
+
+.horse img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 768px) {
+    .navegacao {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navegacao ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .texto {
+        font-size: 18px;
+    }
+    .introducao {
+        font-size: medium;
+    }
 }
