@@ -1,0 +1,40 @@
+body {
+    margin: 5px;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    margin: 2px;
+    padding: 0;
+    background-color: black;
+}
+
+.navegacao {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(63, 63, 63);
+}
+
+.navegacao ul {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.navegacao ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 4px;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: inherit;
+}
+
+.navegacao ul li a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
