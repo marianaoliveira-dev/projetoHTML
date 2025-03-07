@@ -1,21 +1,19 @@
 body {
-    margin: 5px;
+    margin: 0;
     padding: 0;
     background-color: rgb(0, 0, 0);
 }
 
 header {
-    margin: 2px;
-    padding: 0;
+    margin: 0;
     background-color: black;
 }
 
 .navegacao {
-    margin-top: 0;
+    margin: 2px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 1px solid rgb(63, 63, 63);
 }
 
 .navegacao ul {
@@ -39,18 +37,62 @@ header {
     border-bottom: 1px solid #fff;
 }
 
-.tabela {
+/* .tabela {
     position: absolute;
-    /* top: 10px;  Distância do topo */
-    left: 10px; /* Alinha à esquerda */
+    left: 0;
     border-collapse: collapse;
     border: 1px solid rgb(134, 134, 134);
-    color: #fff;
     width: 300px;
 }
 
 .tabela th, .tabela td {
     border: 1px solid rgb(134, 134, 134);
     padding: 8px;
+} */
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+    align-items: flex-start;
+    gap: 20px; /* Espaço entre a tabela e o texto */
 }
+
+.tabela {
+    width: 300px; /* Define uma largura fixa para a tabela */
+    flex-shrink: 0; /* Evita que a tabela diminua muito */
+    border-collapse: collapse; /* Garante que as bordas fiquem unidas */
+    position: fixed;
+}
+.tabela td {
+    border: 1px solid black; /* Adiciona bordas às células */
+    padding: 8px; /* Adiciona um espaço interno para melhor legibilidade */
+}
+.tabela tr:first-child td {
+    background-color: #f0f0f0; /* Destaca o cabeçalho */
+    font-weight: bold;
+    text-align: center;
+}
+.texto {
+    padding: 15px;
+    max-width: 600px; /* Define a largura máxima do texto */
+    flex: 1; /* Permite que o texto ocupe o espaço restante */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column; /* Empilha os elementos em telas pequenas */
+        align-items: center;
+        text-align: center;
+    }
+
+    .tabela {
+        width: 100%;
+    }
+
+    .texto {
+        max-width: 100%;
+    }
+}
+
 

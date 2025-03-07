@@ -147,23 +147,6 @@ footer {
     align-items: center;
     font-family: Courier New, monospace	;
 } */ 
-@media (max-width: 768px) {
-    .navegacao {
-        flex-direction: column;
-        text-align: center;
-    }
-    .navegacao ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .texto {
-        font-size: 18px;
-    }
-    .introducao {
-        font-size: medium;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -231,6 +214,7 @@ header {
     font-size: larger;
     font-weight: bolder;
     padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .horse img {
