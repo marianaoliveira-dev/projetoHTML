@@ -1,6 +1,6 @@
 body {
-    margin: 5px;
-    padding: 5px;
+    /* margin: 5px;
+    padding: 5px; */
     background-color: rgb(0, 0, 0);
     color: white;
 }
@@ -9,7 +9,16 @@ header {
     background-color: black;
     padding: 10px 0;
 }
-
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.estilo {
+    color: #FFD700;
+}
 .navegacao {
     display: flex;
     align-items: center;
@@ -79,5 +88,13 @@ header {
     margin-bottom: 100px;
 }
 .photo {
+    margin-bottom: 20px;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.test {
     margin-bottom: 20px;
 }
